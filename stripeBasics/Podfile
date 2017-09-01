@@ -7,4 +7,5 @@ target 'stripeBasics' do
 
   # Pods for stripeBasics
 pod 'Stripe'
+pod 'Alamofire', '~> 4.4'
 end
