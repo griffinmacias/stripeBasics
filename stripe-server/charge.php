@@ -1,7 +1,8 @@
 <?php
+include('Keys.php');
 require_once(‘vendor/autoload.php’);
 // See your keys here https://dashboard.stripe.com/account/apikeys
-\Stripe\Stripe::setApiKey(“sk_test_randomcharactersfromyourstripeaccount”);
+\Stripe\Stripe::setApiKey(Constants::$stripe_apiKey);
 // Get the credit card details submitted by the form
 $token = $_POST[‘stripeToken’];
 $amount = $_POST[‘amount’];
